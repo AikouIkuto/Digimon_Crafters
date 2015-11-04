@@ -1,0 +1,22 @@
+package com.digimoncrafters.render;
+
+import com.digimoncrafters.model.ModelFireB;
+
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+
+public class RenderFireB extends TileEntitySpecialRenderer {
+	
+	ModelFireB model;
+	
+	public RenderFireB(){
+		model = new ModelFireB();
+	}
+	
+	@Override
+	public void renderTileEntityAt(TileEntity p_147500_1_, double p_147500_2_,
+			double p_147500_4_, double p_147500_6_, float p_147500_8_) {
+		
+	}
+
+}

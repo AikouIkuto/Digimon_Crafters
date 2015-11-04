@@ -1,0 +1,33 @@
+package com.digimoncrafters.render;
+
+import org.lwjgl.opengl.GL11;
+
+import com.digimoncrafters.model.ModelFireB;
+
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+
+public class RenderFireB extends TileEntitySpecialRenderer {
+	
+	private ModelFireB model;
+	private ResourceLocation texture = new ResourceLocation("dc:textures/models/FireB.png");
+
+	
+	public RenderFireB(){
+		model = new ModelFireB();
+	}
+	
+	@Override
+	public void renderTileEntityAt(TileEntity tile, double x,
+			double y, double z, float scale) {
+		
+		GL11.glPushMatrix();
+			GL11.glTranslated(x+0.5, y+1.5, z+0.5); // x trans the model to the middle,
+			GL11.glRotatef(180, 0, 0, 1);
+			this.bindTexture(texture);
+		GL11.glPopMatrix();
+		
+	}
+
+}

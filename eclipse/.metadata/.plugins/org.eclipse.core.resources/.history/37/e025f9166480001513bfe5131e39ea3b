@@ -1,0 +1,19 @@
+package world;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class DCWorld {
+	public static void mainRegistry()
+	{
+		
+	}
+
+	public static void initialiseWorldGen()
+	{
+		
+	}
+	public static void registerWorldGen(Class worldGenClass, int weightedProbability)
+	{
+		GameRegistry.registerWorldGenerator(new worldGenClass, modGenerationWeight);
+	}
+}

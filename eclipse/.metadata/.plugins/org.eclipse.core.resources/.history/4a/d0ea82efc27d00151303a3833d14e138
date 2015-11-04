@@ -1,0 +1,61 @@
+package com.digimoncrafters.block;
+
+import com.digimoncrafters.creativetabs.DCCreativeTabs;
+import com.digimoncrafters.lib.Strings;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockStairs;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+
+public class DCBlock {
+
+	public static void mainRegistry(){
+		initialiseBlock();
+		registerBlock();
+	}
+	
+	public static Block steelBlock;
+	public static Block linkaBrick;
+	public static Block linkaStairs;
+	public static Block ruinBlock;
+	public static Block stoneBrick;
+	public static Block BlockMeat;
+	public static Block BlockBigMeat;
+	public static Block laptop;
+	public static Block blockJumper;
+	// get to know how to create stairs (and slabs if possible)
+	
+	
+	
+	public static void initialiseBlock(){
+		steelBlock = new steelBlock(Material.iron).setBlockName("SteelBlock").setCreativeTab(DCCreativeTabs.tabDigimonBlocks).setBlockTextureName("dc:steelblock");
+		linkaBrick = new linkaBrick(Material.rock).setBlockName("LinkaBrick").setCreativeTab(DCCreativeTabs.tabDigimonBlocks).setBlockTextureName("dc:Linkabrick");
+		linkaStairs = new linkaStairs(Material.rock).setBlockName("LinkaStairs").setCreativeTab(DCCreativeTabs.tabDigimonBlocks).setBlockTextureName("dc:LinkaBrick");
+		ruinBlock = new ruinBlock(Material.rock).setBlockName("RuinBlock").setCreativeTab(DCCreativeTabs.tabDigimonBlocks).setBlockTextureName("dc:RuinBlock");
+		stoneBrick = new stoneBrick(Material.rock).setBlockName("StoneBrick").setCreativeTab(DCCreativeTabs.tabDigimonBlocks).setBlockTextureName("dc:StoneBrick");
+		blockJumper = new blockJumper(Material.cloth).setBlockName("Jumper").setCreativeTab(DCCreativeTabs.tabDigimonBlocks).setBlockTextureName("dc:jumper");
+		BlockMeat = new BlockMeat().setBlockName("BlockMeat").setBlockTextureName("dc:digimeat");
+		BlockBigMeat = new BlockBigMeat().setBlockName("BlockBigMeat").setBlockTextureName("dc:bigmeat");
+		laptop = new laptop(Material.circuits).setBlockName("Laptop").setCreativeTab(DCCreativeTabs.tabDigimonDevices).setBlockTextureName("dc:Laptop");
+		
+        
+
+	}
+	
+	public static void registerBlock(){
+		GameRegistry.registerBlock(steelBlock, steelBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(linkaBrick, linkaBrick.getUnlocalizedName());
+		GameRegistry.registerBlock(linkaStairs, linkaStairs.getUnlocalizedName());
+		GameRegistry.registerBlock(ruinBlock, ruinBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(stoneBrick, stoneBrick.getUnlocalizedName());
+		GameRegistry.registerBlock(BlockMeat, BlockMeat.getUnlocalizedName());
+		GameRegistry.registerBlock(BlockBigMeat, BlockBigMeat.getUnlocalizedName());
+		GameRegistry.registerBlock(laptop, laptop.getUnlocalizedName());
+		GameRegistry.registerBlock(blockJumper, blockJumper.getUnlocalizedName());
+		
+	}
+	
+}

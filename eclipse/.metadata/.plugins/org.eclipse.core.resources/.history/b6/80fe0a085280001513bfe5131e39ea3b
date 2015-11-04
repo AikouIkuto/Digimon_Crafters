@@ -1,0 +1,17 @@
+package com.digimoncrafters.entity;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.projectile.EntityThrowable;
+import net.minecraft.world.World;
+
+public class EntityGrenade extends EntityThrowable {
+
+	public EntityGrenade(World p_i1776_1_) {
+		super(p_i1776_1_);
+	}
+	
+	public EntityGrenade(World world, EntityLivingBase entity){
+		super(world, entity);
+	}
+
+}

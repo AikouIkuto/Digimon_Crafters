@@ -1,0 +1,17 @@
+package com.digimoncrafters.item;
+
+import java.util.Set;
+
+import net.minecraft.item.ItemAxe;
+
+public class chainsaw extends ItemAxe {
+
+	protected chainsaw(ToolMaterial p_i45327_1_) {
+		super(p_i45327_1_);
+	}
+	
+	
+
+}
+
+

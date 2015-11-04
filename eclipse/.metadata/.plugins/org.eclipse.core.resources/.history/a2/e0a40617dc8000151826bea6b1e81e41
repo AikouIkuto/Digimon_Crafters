@@ -1,0 +1,11 @@
+package com.digimoncrafters.item;
+
+import net.minecraft.item.ItemSword;
+
+public class chainsaw extends ItemSword {
+
+	protected chainsaw(ToolMaterial p_i45327_1_) {
+		super(p_i45327_1_);
+	}
+
+}

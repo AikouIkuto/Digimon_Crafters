@@ -1,0 +1,20 @@
+package com.digimoncrafters.item;
+
+import java.util.Set;
+
+import com.google.common.collect.ImmutableSet;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+
+public class chainsaw extends ItemSword {
+
+	protected chainsaw(ToolMaterial p_i45327_1_) {
+		super(p_i45327_1_);
+	}
+	@Override
+	public Set<String> getToolClasses(ItemStack stack) {
+	    return ImmutableSet.of("sword", "axe");
+	}
+
+}

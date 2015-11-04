@@ -1,0 +1,19 @@
+package com.digimoncrafters.item;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemSword;
+
+public class shinai extends ItemSword {
+
+	public shinai(ToolMaterial p_i45356_1_) {
+		super(p_i45356_1_);
+	}
+
+	
+
+}
+
+// I may be able to ceate a battle axe by creating a normal axe
+// and then creating a specific material for it to make it
+// inherit from the material.

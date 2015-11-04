@@ -1,0 +1,20 @@
+package com.digimoncrafters.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
+
+public class blockJumper extends Block
+{
+
+	protected blockJumper(Material p_i45394_1_)
+	{
+		super(p_i45394_1_);
+		this.setHardness(10F);
+		this.setResistance(30F);
+		this.setStepSound(soundTypeCloth);
+	}
+	
+	public void onEntityWalking(World par1World, int par2, int par3, int par4, Entity par5Entity ){}
+
+}

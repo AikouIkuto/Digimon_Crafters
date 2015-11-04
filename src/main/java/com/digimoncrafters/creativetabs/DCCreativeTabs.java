@@ -1,0 +1,25 @@
+package com.digimoncrafters.creativetabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class DCCreativeTabs {
+	
+	public static CreativeTabs tabDigimonItems;
+	public static CreativeTabs tabDigimonFoods;
+	public static CreativeTabs tabDigimonDevices;
+	public static CreativeTabs tabDigimonBlocks;
+	public static CreativeTabs tabDigimonTools;
+	public static CreativeTabs tabDigimonWeapons;
+	public static CreativeTabs tabDigimonSpirits;
+	
+	public static void InitialiseTabs(){
+		tabDigimonItems = new CreativeTabDigimonItems("DigimonItems");
+		tabDigimonFoods = new CreativeTabDigimonFoods("DigimonFoodItems");
+		tabDigimonDevices = new CreativeTabDigimonDevices("DigimonDigitalDevices");
+		tabDigimonBlocks = new CreativeTabDigimonBlocks("DigimonBlocks");
+		tabDigimonTools = new CreativeTabDigimonTools("DigimonTools");
+		tabDigimonWeapons = new CreativeTabDigimonWeapons("DigimonWeapons");
+		tabDigimonSpirits = new CreativeTabDigimonSpirits("Digimonspirits");
+		
+	}
+}

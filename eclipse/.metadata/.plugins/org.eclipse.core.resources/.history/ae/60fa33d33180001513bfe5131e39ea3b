@@ -1,0 +1,7 @@
+package com.digimoncrafters.block;
+
+import net.minecraft.block.Block;
+
+public class cristalStairs extends Block {
+
+}

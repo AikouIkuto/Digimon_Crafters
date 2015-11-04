@@ -1,0 +1,54 @@
+package com.digimoncrafters.block;
+
+import com.digimoncrafters.tileentity.TileEntityFireB;
+
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.MathHelper;
+import net.minecraft.world.World;
+
+public class FireB extends BlockContainer {
+
+	public FireB(Material material) {
+		super(material);
+		
+		this.setHardness(10F);
+		this.setResistance(5.0F);
+		this.setLightLevel(14);
+		this.setBlockBounds(0F, 0F, 0F, 1F, 1.5F, 1F); //(minX, minY, minZ, maxX, maxY, maxZ)
+		this.setStepSound(soundTypeMetal);
+		
+	}
+
+	public int getRenderType(){
+		return -1;
+	}
+	
+	public boolean isOpaqueCube(){
+		return false;
+	}
+	
+	public boolean renderAsNormalBlock(){
+		return false;
+	}
+	
+	@Override
+	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+		return new TileEntityFireB();
+	}
+
+	@Override
+	public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack)
+	{
+	if (entity == null)
+	{
+	return;
+	}
+
+	TileEntityFireB tile = (TileEntityFireB) world.getTileEntity(x, y, z);
+	tile.direction = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+	}
+}

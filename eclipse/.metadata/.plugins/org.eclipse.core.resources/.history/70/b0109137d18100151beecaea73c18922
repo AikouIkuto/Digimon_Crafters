@@ -1,0 +1,82 @@
+package com.digimoncrafters.block;
+
+import com.digimoncrafters.tileentity.TileEntityLaptop;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+public class laptop extends BlockContainer 
+	{
+	{
+
+	//this.setBlockBounds(0.4F, 0.0F, 0.4F, 0.6F, 3.0F, 0.6F); //This creates a custom hit box, see the
+		// sign for an example of this, more specifically the "stick" part of the model.
+	}
+	public laptop(Material material) 
+	{
+		super(material);
+		this.setHardness(10F);
+		this.setResistance(5.0F);
+		this.setLightLevel(14);
+
+	}
+	
+	
+	@Override
+	public int getRenderType()
+	{
+		return -1;
+	}
+	
+	public boolean isOpaqueCube()
+	{
+		return false;
+	}
+	
+	
+	public boolean renderAsNormalBlock()
+	{
+		return false;
+	}
+
+	
+	public TileEntity createNewTileEntity(World world, int id) 
+	{
+		return new TileEntityLaptop();
+	}
+	
+	public void onBlockAdded(World world, int x, int y, int z){ //started adding here
+		super.onBlockAdded(world, x, y,z);
+		this.direction(world, x, y, z);
+	}
+
+
+	private void direction(World world, int x, int y, int z) {
+		if(!world.isRemote){
+			Block direction = world.getBlock(x, y, z - 1);
+			Block direction1 = world.getBlock(x, y, z + 1);
+			Block direction2 = world.getBlock(x - 1, y, z);
+			Block direction3 = world.getBlock(x + 1, y, z);
+			byte byte0 = 3;
+			
+			if(direction.func_149730_j() && direction.func_149730_j()){
+				byte0 = 3;
+			}
+			if(direction1.func_149730_j() && direction1.func_149730_j()){
+				byte0 = 2;
+			}
+			if(direction2.func_149730_j() && direction2.func_149730_j()){
+				byte0 = 5;
+			}
+			if(direction3.func_149730_j() && direction3.func_149730_j()){
+				byte0 = 4;
+			}
+			world.setBlockMetadataWithNotify(x, y, z, byte0, 2);
+		}
+	}
+	
+
+}

@@ -1,0 +1,62 @@
+item.AquanData.name=Aquan Data (Low Class)
+item.AquanMid.name=Aquan Data (Mid Class)
+item.BeastData.name=Beast Data (Low Class)
+item.BeastMid.name=Beast Data (Mid Class)
+item.BirdData.name=Bird Data (Low Class)
+item.BirdMid.name=Bird Data (Mid Class)
+item.DevilData.name=Devil Data (Low Class)
+item.DevilMid.name=Devil Data (Mid Class)
+item.DragonData.name=Dragon Data (Low Class)
+item.DragonMid.name=Dragon Data (Mid Class)
+item.HolyData.name=Holy Data (Low Class)
+item.HolyMid.name=Holy Data (Mid Class)
+item.InsectData.name=Insect Data (Low Class)
+item.InsectMid.name=Insect Data (Mid Class)
+item.MachineData.name=Machine Data (Low Class)
+item.MachineMid.name=Machine Data (MidClass)
+item.PlantData.name=Plant Data (Low Class)
+item.PlantMid.name=Plant Data (Mid Class)
+item.DDNA.name=Digital DNA (DDNA)
+item.MutantData.name=Mutant Data
+item.Incubator.name=Incubator
+item.CPU.name=Central Processor Unit
+item.Bone.name=Bone
+item.D-Arc.name=D Arc
+item.MisteryEgg.name=Mistery Egg
+item.Accelerator.name=Accelerator
+item.TwinR.name=Digimon Twin R
+item.TwinL.name=Digimon Twin L
+
+item.ArtGenome.name=Artificial Genome
+item.AvianGenome.name=Avian Genome
+item.BotanicGenome.name=Botanic Genome
+item.DepthGenome.name=Depth Genome
+item.DevilGenome.name=Evil Genome
+item.FeralGenome.name=Feral Genome
+item.InsectGenome.name=Insect Genome
+item.JusticeGenome.name=Justice Genome
+item.ReptileGenome.name=Reptile Genome
+
+item.Diginoir.name=Diginowa
+item.Diginoir2.name=Bowl of Boiled Diginowa
+item.meat.name=Digi Meat
+item.meatGiant.name=Giant Digi Meat
+item.meatSirloin.name=Sirloin
+
+tile.SteelBlock.name=Steel Block
+tile.LinkaBrick.name=Linka's Stone Bricks
+tile.LinkaStairs.name= Linka's Stone Stairs
+tile.RuinBlock.name=Old Stone Bricks
+tile.RuinStairs.name=Old Stone Stairs
+tile.StoneBrick.name=Stone Bricks
+tile.StoneStairs.name=Stone Stairs
+tile.Laptop.name=Lap Top
+tile.Jumper.name=Toy Block
+
+
+entity.CardmonC2.name=Cardmon C2
+
+itemGroup.DigimonItems=Digimon Items
+itemGroup.DigimonFoodItems=Digimon Foods
+itemGroup.DigimonDigitalDevices=Digimon Digital Devices & Machines
+itemGroup.DigimonBlocks=Digimon Blocks

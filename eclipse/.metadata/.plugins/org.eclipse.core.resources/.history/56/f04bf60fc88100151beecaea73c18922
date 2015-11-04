@@ -1,0 +1,28 @@
+package com.digimoncrafters.item;
+
+import java.util.Set;
+
+import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.Sets;
+
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
+
+public class tomahawk extends ItemSword {
+
+	public tomahawk(ToolMaterial Digizoid) {
+		super(Digizoid);
+	
+	}
+	@Override
+	public Set<String> getToolClasses(ItemStack stack) {
+	    return ImmutableSet.of("sword", "axe");
+	}
+	private static Set effectiveAgainst = Sets.newHashSet(new Block[] {
+		    Blocks.planks, Blocks.bookshelf, Blocks.log, Blocks.log2, Blocks.oak_stairs, 
+		    Blocks.chest, Blocks.pumpkin, Blocks.lit_pumpkin});
+	
+
+}

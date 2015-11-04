@@ -1,0 +1,17 @@
+package world;
+
+public class DCWorld {
+	public static void mainRegistry()
+	{
+		
+	}
+
+	public static void initialiseWorldGen()
+	{
+		
+	}
+	public static void registerWorldGen(Class worldGenClass, int weightedProbability)
+	{
+		
+	}
+}

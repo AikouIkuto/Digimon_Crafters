@@ -1,0 +1,173 @@
+package com.digimoncrafters.item;
+
+import com.digimoncrafters.block.DCBlock;
+import com.digimoncrafters.creativetabs.DCCreativeTabs;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemSeedFood;
+
+public class DCItem {
+	//This is a method, this is created first
+	public static void mainRegistry(){
+		initialiseItem(); //Then this is added after the last method
+		registerItem(); //After that ^ this is added
+	}
+	public static Item aquanData;
+	public static Item aquanMidData;
+	public static Item beastData;
+	public static Item beastMidData;
+	public static Item birdData;
+	public static Item birdMidData;
+	public static Item devilData;
+	public static Item devilMidData;
+	public static Item dragonData;
+	public static Item dragonMidData;
+	public static Item holyData;
+	public static Item holyMidData;
+	public static Item insectData;
+	public static Item insectMidData;
+	public static Item machineData;
+	public static Item machineMidData;
+	public static Item plantData;
+	public static Item plantMidData;
+	public static Item digitalDNA;
+	public static Item mutantData;
+	public static Item incubator;
+	public static Item processor;
+	public static Item digibone;
+	public static Item misteryEgg;
+	public static Item accelerator;
+	public static Item digimonL;
+	public static Item digimonR;
+	
+	public static Item shinai;
+	public static Item chainsaw;
+	
+	
+	public static Item artGenome;
+	public static Item avianGenome;
+	public static Item botanicGenome;
+	public static Item depthGenome;
+	public static Item devilGenome;
+	public static Item feralGenome;
+	public static Item insectGenome;
+	public static Item justiceGenome;
+	public static Item reptileGenome;
+	
+	public static Item diginoir;
+	public static Item diginoir2;
+	public static Item meat;
+	//Add a cooked version of the meat
+	public static Item meatGiant;
+	//Add
+	public static Item meatSirloin;
+	//Add
+	
+	//So is this one, this second
+	public static void initialiseItem(){
+		aquanData = new Item().setUnlocalizedName("AquanData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:aquandata");
+		aquanMidData = new Item().setUnlocalizedName("AquanMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:aquanmiddata");
+		beastData = new Item().setUnlocalizedName("BeastData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:beastdata");
+		beastMidData = new Item().setUnlocalizedName("BeastMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:beastmiddata");
+		birdData = new Item().setUnlocalizedName("BirdData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:birddata");
+		birdMidData = new Item().setUnlocalizedName("BirdMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:birdmiddata");
+		devilData = new Item().setUnlocalizedName("DevilData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:devildata");
+		devilMidData = new Item().setUnlocalizedName("DevilMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:devilmiddata");
+		dragonData = new Item().setUnlocalizedName("DragonData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:dragondata");
+		dragonMidData = new Item().setUnlocalizedName("DragonMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:dragonmiddata");
+		holyData = new Item().setUnlocalizedName("HolyData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:holydata");
+		holyMidData = new Item().setUnlocalizedName("HolyMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:holymiddata");
+		insectData = new Item().setUnlocalizedName("InsectData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:insectdata");
+		insectMidData = new Item().setUnlocalizedName("InsectMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:insectmiddata");
+		machineData = new Item().setUnlocalizedName("MachineData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:machinedata");
+		machineMidData = new Item().setUnlocalizedName("MachineMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:machinemiddata");
+		plantData = new Item().setUnlocalizedName("PlantData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:plantdata");
+		plantMidData = new Item().setUnlocalizedName("PlantMid").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:plantmiddata");
+		digitalDNA = new Item().setUnlocalizedName("DDNA").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:DDNA2");
+		mutantData = new Item().setUnlocalizedName("MutantData").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:mutantdata");
+		incubator = new Item().setUnlocalizedName("Incubator").setTextureName("dc:Incubator");
+		processor = new Item().setUnlocalizedName("CPU").setCreativeTab(DCCreativeTabs.tabDigimonDevices).setTextureName("dc:Processor");
+		misteryEgg = new Item().setUnlocalizedName("MisteryEgg").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:MisteryEgg");
+		accelerator = new Item().setUnlocalizedName("Accelerator").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:Accelerator");
+		digimonL = new Item().setUnlocalizedName("TwinL").setCreativeTab(DCCreativeTabs.tabDigimonDevices).setTextureName("dc:twinL");
+		digimonR = new Item().setUnlocalizedName("TwinR").setCreativeTab(DCCreativeTabs.tabDigimonDevices).setTextureName("dc:twinR");
+		
+		shinai = new shinai(ToolMaterial.WOOD).setUnlocalizedName("Shinai").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:shinai");
+		chainsaw = new chainsaw(ToolMaterial.IRON).setUnlocalizedName("Chainsaw").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:chainsaw");
+		
+		artGenome = new Item().setUnlocalizedName("ArtGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:artgenome");
+		avianGenome = new Item().setUnlocalizedName("AvianGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:aviangenome");
+		botanicGenome = new Item().setUnlocalizedName("BotanicGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:botanicgenome");
+		depthGenome = new Item().setUnlocalizedName("DepthGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:depthGenome");
+		devilGenome = new Item().setUnlocalizedName("DevilGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:devilgenome");
+		feralGenome = new Item().setUnlocalizedName("FeralGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:feralgenome");
+		insectGenome = new Item().setUnlocalizedName("InsectGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:insectgenome");
+		justiceGenome = new Item().setUnlocalizedName("JusticeGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:justicegenome");
+		reptileGenome = new Item().setUnlocalizedName("ReptileGenome").setCreativeTab(DCCreativeTabs.tabDigimonItems).setTextureName("dc:reptilegenome");
+		
+		diginoir = new ItemFood(6, 6.0F, false).setUnlocalizedName("Diginoir").setCreativeTab(DCCreativeTabs.tabDigimonFoods).setTextureName("dc:Diginoir");
+		diginoir2 = new ItemFood(9, 9.0F, false).setUnlocalizedName("Diginoir2").setCreativeTab(DCCreativeTabs.tabDigimonFoods).setTextureName("dc:DiginoirBowl");
+		meat = new ItemSeedFood(1, 1.5F, DCBlock.BlockMeat, Blocks.farmland).setUnlocalizedName("meat").setCreativeTab(DCCreativeTabs.tabDigimonFoods).setTextureName("dc:DigiMeat");
+		meatGiant = new ItemSeedFood(2, 2.0F, DCBlock.BlockBigMeat, Blocks.farmland).setUnlocalizedName("meatGiant").setCreativeTab(DCCreativeTabs.tabDigimonFoods).setTextureName("dc:BigMeat");
+		meatSirloin = new ItemFood(3, 2.5F, true).setUnlocalizedName("meatSirloin").setCreativeTab(DCCreativeTabs.tabDigimonFoods).setTextureName("dc:Sirloin");
+		
+		
+	// ^ This has added an item, the texture part comes last
+	}
+	//And this one, this last
+	public static void registerItem(){
+		GameRegistry.registerItem(aquanData, aquanData.getUnlocalizedName());
+		GameRegistry.registerItem(aquanMidData, aquanMidData.getUnlocalizedName());
+		GameRegistry.registerItem(beastData, beastData.getUnlocalizedName());
+		GameRegistry.registerItem(beastMidData, beastMidData.getUnlocalizedName());
+		GameRegistry.registerItem(birdData, birdData.getUnlocalizedName());
+		GameRegistry.registerItem(birdMidData, birdMidData.getUnlocalizedName());
+		GameRegistry.registerItem(devilData, devilData.getUnlocalizedName());
+		GameRegistry.registerItem(devilMidData, devilMidData.getUnlocalizedName());
+		GameRegistry.registerItem(dragonData, dragonData.getUnlocalizedName());
+		GameRegistry.registerItem(dragonMidData, dragonMidData.getUnlocalizedName());
+		GameRegistry.registerItem(holyData, holyData.getUnlocalizedName());
+		GameRegistry.registerItem(holyMidData, holyMidData.getUnlocalizedName());
+		GameRegistry.registerItem(insectData, insectData.getUnlocalizedName());
+		GameRegistry.registerItem(insectMidData, insectMidData.getUnlocalizedName());
+		GameRegistry.registerItem(machineData, machineData.getUnlocalizedName());
+		GameRegistry.registerItem(machineMidData, machineMidData.getUnlocalizedName());
+		GameRegistry.registerItem(plantData, plantData.getUnlocalizedName());
+		GameRegistry.registerItem(plantMidData, plantMidData.getUnlocalizedName());
+		GameRegistry.registerItem(digitalDNA, digitalDNA.getUnlocalizedName());
+		GameRegistry.registerItem(mutantData, mutantData.getUnlocalizedName());
+		GameRegistry.registerItem(incubator, incubator.getUnlocalizedName());
+		GameRegistry.registerItem(processor, processor.getUnlocalizedName());
+		GameRegistry.registerItem(misteryEgg, misteryEgg.getUnlocalizedName());
+		GameRegistry.registerItem(accelerator, accelerator.getUnlocalizedName());
+		GameRegistry.registerItem(digimonL, digimonL.getUnlocalizedName());
+		GameRegistry.registerItem(digimonR, digimonR.getUnlocalizedName());
+		
+		GameRegistry.registerItem(shinai, shinai.getUnlocalizedName());
+
+		
+		GameRegistry.registerItem(artGenome, artGenome.getUnlocalizedName());
+		GameRegistry.registerItem(avianGenome, avianGenome.getUnlocalizedName());
+		GameRegistry.registerItem(botanicGenome, botanicGenome.getUnlocalizedName());
+		GameRegistry.registerItem(depthGenome, depthGenome.getUnlocalizedName());
+		GameRegistry.registerItem(devilGenome, devilGenome.getUnlocalizedName());
+		GameRegistry.registerItem(feralGenome, feralGenome.getUnlocalizedName());
+		GameRegistry.registerItem(insectGenome, insectGenome.getUnlocalizedName());
+		GameRegistry.registerItem(justiceGenome, justiceGenome.getUnlocalizedName());
+		GameRegistry.registerItem(reptileGenome, reptileGenome.getUnlocalizedName());
+		
+		GameRegistry.registerItem(diginoir, diginoir.getUnlocalizedName());
+		GameRegistry.registerItem(diginoir2, diginoir2.getUnlocalizedName());
+		GameRegistry.registerItem(meat, meat.getUnlocalizedName());
+		GameRegistry.registerItem(meatGiant, meatGiant.getUnlocalizedName());
+		GameRegistry.registerItem(meatSirloin, meatSirloin.getUnlocalizedName());
+	// ^ This comes after adding the item and before the texture
+	}
+	
+}

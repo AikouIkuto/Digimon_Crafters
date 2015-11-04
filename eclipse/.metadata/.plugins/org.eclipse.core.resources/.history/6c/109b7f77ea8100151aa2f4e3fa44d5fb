@@ -1,0 +1,7 @@
+package com.digimoncrafters.block;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityFireB extends TileEntity {
+
+}

@@ -1,0 +1,7 @@
+package com.digimoncrafters.item;
+
+import net.minecraft.item.Item;
+
+public class grenade extends Item{
+
+}

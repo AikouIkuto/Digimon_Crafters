@@ -1,0 +1,32 @@
+package com.digimoncrafters.block;
+
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+public class FireB extends BlockContainer {
+
+	protected FireB() {
+		super(Material.iron);
+	}
+
+	@Override
+	public int getRenderType(){
+		return -1;
+	}
+	
+	public boolean isOpaqueCube(){
+		return false;
+	}
+	
+	public boolean isNormalCube(){
+		return false;
+	}
+	
+	@Override
+	public TileEntity createNewTileEntity(World world, int id) {
+		return new TileEntityFireB();
+	}
+
+}

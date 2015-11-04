@@ -1,0 +1,5 @@
+package com.digimoncrafters.render.items;
+
+public class GenericBlockItemRenderer {
+
+}

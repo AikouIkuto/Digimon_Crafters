@@ -1,0 +1,16 @@
+[
+{
+  "modid": "dc",
+  "name": "Digimon Crafters",
+  "description": "Enjoy the experience of two virtual realities merged in one",
+  "version": "${version}",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["KitsuneJP"],
+  "credits": "KitsuneJP",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,17 @@
+package com.digimoncrafters.item;
+
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemStack;
+
+public class pumpkinAxe extends ItemAxe {
+
+	protected pumpkinAxe(ToolMaterial Digizoit) {
+		super(Digizoit);
+	}
+	public boolean hasEffect(ItemStack par1ItemStack, int pass)
+	{
+	//This means it will look "special" in the inventory
+	return true;
+	}
+
+}

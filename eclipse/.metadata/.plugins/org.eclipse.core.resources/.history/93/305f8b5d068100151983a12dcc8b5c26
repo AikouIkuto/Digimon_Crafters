@@ -1,0 +1,11 @@
+package com.digimoncrafters.item;
+
+import net.minecraft.item.ItemAxe;
+
+public class pumpkinAxe extends ItemAxe {
+
+	protected pumpkinAxe(ToolMaterial Digizoit) {
+		super(Digizoit);
+	}
+
+}
